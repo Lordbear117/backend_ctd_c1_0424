@@ -1,0 +1,32 @@
+[2024-05-09 22:40:46] [ ERROR] [Main:53] class java.lang.ClassNotFoundException: org.h2.Driver
+[2024-05-09 22:40:46] [ ERROR] [Main:60] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-05-09 22:46:14] [ INFO ] [Main:36] Animal: 1 - Firulais - Perro
+[2024-05-09 22:46:14] [ INFO ] [Main:36] Animal: 2 - Lola - Vaca
+[2024-05-09 22:46:14] [ INFO ] [Main:36] Animal: 3 - Homero - Perro
+[2024-05-09 22:46:14] [ INFO ] [Main:36] Animal: 4 - Pepe - Sapo
+[2024-05-09 22:46:14] [ INFO ] [Main:36] Animal: 5 - Tuki - Loro
+[2024-05-09 22:46:14] [ INFO ] [Main:46] Animal: 2 - Lola - Vaca
+[2024-05-09 22:46:14] [ INFO ] [Main:46] Animal: 3 - Homero - Perro
+[2024-05-09 22:46:14] [ INFO ] [Main:46] Animal: 4 - Pepe - Sapo
+[2024-05-09 22:46:14] [ INFO ] [Main:46] Animal: 5 - Tuki - Loro
+[2024-05-09 22:48:00] [ INFO ] [Main:36] Animal: 1 - Firulais - Perro
+[2024-05-09 22:48:00] [ INFO ] [Main:36] Animal: 2 - Lola - Vaca
+[2024-05-09 22:48:00] [ INFO ] [Main:36] Animal: 3 - Homero - Perro
+[2024-05-09 22:48:00] [ INFO ] [Main:36] Animal: 4 - Pepe - Sapo
+[2024-05-09 22:48:00] [ INFO ] [Main:36] Animal: 5 - Tuki - Loro
+[2024-05-09 22:48:00] [ INFO ] [Main:39] -----------------------------------------------------
+[2024-05-09 22:48:00] [ INFO ] [Main:47] Animal: 2 - Lola - Vaca
+[2024-05-09 22:48:00] [ INFO ] [Main:47] Animal: 3 - Homero - Perro
+[2024-05-09 22:48:00] [ INFO ] [Main:47] Animal: 4 - Pepe - Sapo
+[2024-05-09 22:48:00] [ INFO ] [Main:47] Animal: 5 - Tuki - Loro
+[2024-05-09 22:49:40] [ ERROR] [Main:54] class org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO ANIMALES(NOMBRE, TIPO) VALUES ('Firulais', 'Perro'), ('Lola', 'Vaca'), ('Homero, 'Perro'), ('Pepe', 'Sapo'), ('Tuki', 'Loro[*]')"
+Syntax error in SQL statement "INSERT INTO ANIMALES(NOMBRE, TIPO) VALUES ('Firulais', 'Perro'), ('Lola', 'Vaca'), ('Homero, 'Perro'), ('Pepe', 'Sapo'), ('Tuki', 'Loro[*]')"; SQL statement:
+INSERT INTO ANIMALES(NOMBRE, TIPO) VALUES ('Firulais', 'Perro'), ('Lola', 'Vaca'), ('Homero, 'Perro'), ('Pepe', 'Sapo'), ('Tuki', 'Loro') [42000-224]
+[2024-05-09 22:52:01] [ INFO ] [Main:36] Animal: 1 - Firulais - Perro
+[2024-05-09 22:52:01] [ INFO ] [Main:36] Animal: 2 - Lola - Vaca
+[2024-05-09 22:52:01] [ INFO ] [Main:36] Animal: 3 - Homero - Perro
+[2024-05-09 22:52:01] [ INFO ] [Main:36] Animal: 4 - Pepe - Sapo
+[2024-05-09 22:52:01] [ INFO ] [Main:36] Animal: 5 - Tuki - Loro
+[2024-05-09 22:52:01] [ INFO ] [Main:39] -----------------------------------------------------
+[2024-05-09 22:52:01] [ ERROR] [Main:54] class org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "Lola"
+Data conversion error converting "Lola" [22018-224]
