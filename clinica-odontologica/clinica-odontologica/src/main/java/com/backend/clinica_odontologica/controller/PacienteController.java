@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("pacientes")
+@CrossOrigin
 public class PacienteController {
 
     //peticion http json <-> @RequestBody & @ResponseBody -> java dto -> controller dto -> servicio dto <-> entidad <-> persistencia entidad <-> base de datos
