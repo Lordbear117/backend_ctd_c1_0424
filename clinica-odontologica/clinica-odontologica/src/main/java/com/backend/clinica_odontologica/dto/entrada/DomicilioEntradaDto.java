@@ -1,10 +1,13 @@
 package com.backend.clinica_odontologica.dto.entrada;
 
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
 
+@Schema(description = "Estructura de datos de entrada que se corresponden con el domicilio del paciente")
 public class DomicilioEntradaDto {
 
 
@@ -19,6 +22,7 @@ public class DomicilioEntradaDto {
     private String localidad;
 
     @NotBlank(message = "Debe proveerse la provincia del domicilioo")
+    @Schema(description = "Provincia a la que pertenece el domicilio. Opciones: COR - BA - MEN")
     private String provincia;
 
     public DomicilioEntradaDto() {

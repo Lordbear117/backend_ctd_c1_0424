@@ -13,9 +13,10 @@ public class JsonPrinter {
         GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.registerTypeAdapter(LocalDate.class, new LocalDateAdapter());
         gsonBuilder.registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter());
-        Gson gson = gsonBuilder.setPrettyPrinting().create();
+        Gson gson = gsonBuilder.create();
+        String jsonString = gson.toJson(t).trim().replace("\n", "").replace("\t", "");
 
-        return gson.toJson(t).trim().replace("\n", "").replace("\t", "");
+        return jsonString.replaceAll("\\s", "");
 
     }
 }
